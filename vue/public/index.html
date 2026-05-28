@@ -12,6 +12,14 @@
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <!-- 引入高德地图 JS API 2.0 -->
+    <script type="text/javascript">
+      window._AMapSecurityConfig = {
+        securityJsCode: '771a4412dded00dee63b7cde82f9b294'  // 从控制台获取
+      }
+    </script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=80555fbf9c023fcd6f408dd1d7d7b54f&plugin=AMap.Geolocation,AMap.Marker,AMap.Scale,AMap.OverView,AMap.ToolBar"></script>
+    <!-- built files will be auto injected -->
     <!-- built files will be auto injected -->
   </body>
 </html>
